@@ -1,5 +1,6 @@
+import './src/lib/dayjs';
+
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
 import {
   useFonts,
   Inter_400Regular,
