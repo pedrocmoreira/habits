@@ -7,7 +7,7 @@
 
 <img src=".github/cover.png" alt="capa projeto habits">
 
-> Aplicação com o obijetivo de criar um comprometimento com os seus hábitos diários e poder acompanhar o quanto você está evoluindo
+> Aplicação com o objetivo de criar um comprometimento com os seus hábitos diários e poder acompanhar o quanto você está evoluindo
 
 ### Ajustes e melhorias
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
