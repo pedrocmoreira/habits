@@ -1,10 +1,15 @@
+import { useNavigation } from "@react-navigation/native";
 import { Text, View, ScrollView } from "react-native";
+
 import { HabitDay, day_size } from "../components/HabitDay";
 import { Header } from "../components/Header";
+
 import { generateDatesFromYearStart } from "../utils/generate-dates-from-year-start";
 
 
 export function Home() {
+  const { navigate } = useNavigation()
+
   const weekDays = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
 
   const datesFromYearStart = generateDatesFromYearStart();
@@ -38,6 +43,7 @@ export function Home() {
             datesFromYearStart.map(date => (
               <HabitDay
                 key={date.toISOString()}
+                onPress={() => navigate('habit', { date: date.toISOString() })}
               />
             ))
           }
