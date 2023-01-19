@@ -31,7 +31,7 @@ export function Checkbox({title, checked = false, ...rest}:Props){
         />
         }
 
-        <Text className='text-white text-base ml-3'>
+        <Text className='text-white font-semibold text-base ml-3'>
           {title}
         </Text>
       </TouchableOpacity>

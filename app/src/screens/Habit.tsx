@@ -44,7 +44,7 @@ export function Habit() {
             checked={false}
           />
           <Checkbox
-            title="caminhar"
+            title="Caminhar"
             checked={true}
           />
         </View>
