@@ -5,7 +5,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/pedrocmoreira/habits?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/pedrocmoreira/habits?style=for-the-badge)
 
-<img src=".github/cover.png" alt="capa projeto habits">
+<img src=".github/capa.png" alt="capa projeto habits">
 
 > Aplicação com o objetivo de criar um comprometimento com os seus hábitos diários e poder acompanhar o quanto você está evoluindo
 
