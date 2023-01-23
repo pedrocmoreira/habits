@@ -7,6 +7,7 @@ import { ProgressBar } from "../components/ProgressBar";
 import { Checkbox } from "../components/Checkbox";
 import { useEffect, useState } from "react";
 import { Loading } from "../components/Loading";
+import { HabitsEmpty } from "../components/HabitsEmpty";
 import { api } from "../lib/axios";
 import { generateProgressPercentge } from "../utils/generate-progress-percentage";
 
@@ -93,14 +94,15 @@ export function Habit() {
           progress={habitsProgress}
         />
 
-        <View className="mt-8">
-          {dayInfo?.possibleHabits && dayInfo?.possibleHabits.map(habit => (
+        <View className="mt-6">
+          {dayInfo?.possibleHabits ? dayInfo?.possibleHabits.map(habit => (
             <Checkbox
               title={habit.title}
               checked={completedHabits.includes(habit.id)}
               onPress={() => {handleToggleHabit(habit.id)}}
             />
           ))
+            : <HabitsEmpty/>
           }
         </View>
 
